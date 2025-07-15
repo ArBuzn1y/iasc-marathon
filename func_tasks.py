@@ -1,3 +1,5 @@
+    # Функції
+
 def hello_world():
     print("Hello, world!")
 
@@ -47,3 +49,23 @@ def outer():
     def inner():
         print("Я - вкладена функція!")
     inner()
+
+    # Виклики функцій
+
+hello_world()
+greet("Anna")
+greet()
+print("Квадрат 5:", square(5))
+print("Сума 3 + 7:", add(3, 7))
+print("Факторіал 5:", factorial(5))
+print("Число 4 парне?", is_even(4))
+print("Числа від 1 до 5:")
+print_numbers(5)
+print("Чи є 'Oleh' у списку?", find_name("Oleh", ["Anna", "Oleh", "Ivan"]))
+print("Максимум із 3, 7, 2:", max_of_three(3, 7, 2))
+print("Навпаки 'Привіт':", reverse_string("Привіт"))
+print("Голосних у 'Hello world':", count_vowels("Hello world"))
+print("Середнє з 2, 4, 6:", average(2, 4, 6))
+print("Інформація про користувача:")
+print_user_info(name="Ivan", age=30, city="Lviv")
+outer()
